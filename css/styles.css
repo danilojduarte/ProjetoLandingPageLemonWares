@@ -208,8 +208,12 @@ body {
     justify-content: space-between;
   }
   
+
+  /* BackGroudn Após Iniciar Scroll */
   nav.scroll {
-    background: var(--primary-color);
+    background: #ff96a7b3;
+
+
   }
   
   nav button {
@@ -328,7 +332,7 @@ body {
     content: '';
     width: 100%;
     height: calc(100rem + var(--nav-height));
-    background-color: var(--brand-light);
+    background-color: var(--branco-color);
     display: block;
   
     position: absolute;
@@ -359,8 +363,10 @@ body {
   #home img {
     width: 26.4rem;
     display: block;
+    border-radius: 1rem;
     margin-inline: auto;
     object-position: 0 2rem;
+    padding-top: 6rem;
   }
   
   #home .stats {
