@@ -70,10 +70,41 @@ p {
   margin-bottom: 3.2rem;
 }
 
-button {
+.btnHome1 {
   background-color: var(--primary-color-red);
   color: var(--branco-color);
+
+  margin-bottom: 4rem;
+  width: 16rem;
+  height: 4.4rem;
+  border-radius: 1rem;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btnHome2 {
+  background-color: transparent;
+  color: var(--black-color);
+
   margin-bottom: 6rem;
+  width: 16rem;
+  height: 4.4rem;
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Pausa na aula em 02-09-32 */
