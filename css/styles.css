@@ -41,14 +41,19 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
   text-align: center;
 }
 
 header {
-  margin-top: 4.1rem;
   width: 37.5rem;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 4.1rem;
 }
+
+
+
 /* INICIO HOME */
 h1 {
   font-size: 3.4rem;
@@ -122,4 +127,7 @@ p {
   color: var(--branco-color);
 }
 
-/* Pausa na aula em 02-09-32 */
+img {
+  border-radius: 1rem;
+}
+/* Pausa na aula em {Video 01 Concluído} */
