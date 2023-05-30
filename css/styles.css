@@ -127,7 +127,10 @@ p {
   color: var(--branco-color);
 }
 
-img {
+header img {
+  display: block;
+  margin-inline: auto;
   border-radius: 1rem;
+
 }
 /* Pausa na aula em {Video 01 Concluído} */
