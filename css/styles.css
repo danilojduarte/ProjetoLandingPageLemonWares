@@ -38,6 +38,8 @@
   --bg-light: hsl(180, 14%, 97%);
 
   font-size: 62.5%; /* 1rem = 10px */
+
+  --nav-height: 7.2rem
 }
 
 body {
@@ -49,8 +51,8 @@ body {
 /* Tamanho da tela de exibição em modo mobile */
 .wrapper {
   width: 37.5rem;
-  margin-right: auto;
-  margin-left: auto;
+  margin-inline: auto;
+  padding-inline: 2.4rem;
 }
 
 /* ===================== FIM GERAL ===================== */
@@ -59,10 +61,10 @@ body {
 
 /* INICIO DO BEFORE
 Backgroung para ser aplicado qauando a landing page tiver cor de fundo na section Home, aplicando comentário ao código */
-/* header::before {
+header::before {
   content: "";
   width: 100vw;
-  height: 20rem;
+  height: calc(60rem + var(--nav-height));
   background-color: var(--bg-button-color-2);
   display: block;
 
@@ -70,11 +72,11 @@ Backgroung para ser aplicado qauando a landing page tiver cor de fundo na sectio
   top: 0;
   left: 0;
   z-index: -1;
-} */
+}
 /* FIM DO BEFORE */
 
 header {
-  margin-top: 4.1rem;
+  margin-top: calc(4.1rem + var(--nav-height));
 }
 
 header h1 {
@@ -100,6 +102,7 @@ header p {
 header .btnHome1 {
   background-color: var(--primary-color-red);
   color: var(--branco-color);
+  font-weight: bold;
 
   margin-bottom: 4rem;
   width: 16rem;
@@ -114,6 +117,7 @@ header .btnHome1 {
 
   margin-right: auto;
   margin-left: auto;
+  transition: all 0.3s ease-in-out;
 }
 
 header .btnHome1:hover {
@@ -125,6 +129,7 @@ header .btnHome1:hover {
 header .btnHome2 {
   background-color: transparent;
   color: var(--black-color);
+  font-weight: bold;
   border: 1px solid var(--primary-color-red);
 
   margin-bottom: 6rem;
@@ -164,7 +169,12 @@ nav {
   align-items: center;
   justify-content: space-between;
 
-  padding: 1.6rem 2.4rem;
+  height: var(--nav-height);
+
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ===================== FIM NAV ===================== */
