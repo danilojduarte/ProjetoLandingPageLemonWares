@@ -1,5 +1,4 @@
-
-
+/* ===================== INICIO GERAL ===================== */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ===================== INICIO GERAL ===================== */
 :root {
   --primary-color-red: #b00000;
 
@@ -48,11 +46,14 @@ body {
   text-align: center;
 }
 
-
+/* Tamanho da tela de exibição em modo mobile */
+.wrapper {
+  width: 37.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 /* ===================== FIM GERAL ===================== */
-
-
 
 /* ===================== INICIO HOME ===================== */
 
@@ -73,9 +74,6 @@ Backgroung para ser aplicado qauando a landing page tiver cor de fundo na sectio
 /* FIM DO BEFORE */
 
 header {
-  width: 37.5rem;
-  margin-right: auto;
-  margin-left: auto;
   margin-top: 4.1rem;
 }
 
@@ -122,7 +120,6 @@ header .btnHome1:hover {
   background-color: var(--branco-color);
   color: var(--black-color);
   border: 1px solid var(--primary-color-red);
-
 }
 
 header .btnHome2 {
@@ -143,7 +140,7 @@ header .btnHome2 {
   margin-right: auto;
   margin-left: auto;
 
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 header .btnHome2:hover {
@@ -156,13 +153,20 @@ header img {
   display: block;
   margin-inline: auto;
   object-fit: 0 2rem;
-
   border-radius: 1rem;
 }
 
 /* ===================== FIM HOME ===================== */
 
+/* ===================== INICIO NAV ===================== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+  padding: 1.6rem 2.4rem;
+}
 
+/* ===================== FIM NAV ===================== */
 
-/* Pausa na aula em {Video 01 Concluído} */
+/* Pausa na aula em {0-40-24} Aplicando Rolagem no menu */
