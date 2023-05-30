@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ===================== INICIO GERAL ===================== */
 :root {
   --primary-color-red: #b00000;
 
@@ -45,6 +48,30 @@ body {
   text-align: center;
 }
 
+
+
+/* ===================== FIM GERAL ===================== */
+
+
+
+/* ===================== INICIO HOME ===================== */
+
+/* INICIO DO BEFORE
+Backgroung para ser aplicado qauando a landing page tiver cor de fundo na section Home, aplicando comentário ao código */
+/* header::before {
+  content: "";
+  width: 100vw;
+  height: 20rem;
+  background-color: var(--bg-button-color-2);
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} */
+/* FIM DO BEFORE */
+
 header {
   width: 37.5rem;
   margin-right: auto;
@@ -52,10 +79,7 @@ header {
   margin-top: 4.1rem;
 }
 
-
-
-/* INICIO HOME */
-h1 {
+header h1 {
   font-size: 3.4rem;
   color: var(--primeira-color-text);
   font-style: normal;
@@ -64,7 +88,7 @@ h1 {
   margin-bottom: 1.6rem;
 }
 
-p {
+header p {
   font-style: normal;
   font-weight: 400;
   color: var(--segunda-color-text);
@@ -75,7 +99,7 @@ p {
   margin-bottom: 3.2rem;
 }
 
-.btnHome1 {
+header .btnHome1 {
   background-color: var(--primary-color-red);
   color: var(--branco-color);
 
@@ -94,14 +118,14 @@ p {
   margin-left: auto;
 }
 
-.btnHome1:hover {
+header .btnHome1:hover {
   background-color: var(--branco-color);
   color: var(--black-color);
   border: 1px solid var(--primary-color-red);
 
 }
 
-.btnHome2 {
+header .btnHome2 {
   background-color: transparent;
   color: var(--black-color);
   border: 1px solid var(--primary-color-red);
@@ -122,7 +146,7 @@ p {
   transition: all .3s ease-in-out;
 }
 
-.btnHome2:hover {
+header .btnHome2:hover {
   background-color: var(--primary-color-red);
   color: var(--branco-color);
 }
@@ -136,20 +160,7 @@ header img {
   border-radius: 1rem;
 }
 
-header::before {
-  content: "";
-  width: 100vw;
-  height: 60rem;
-  background-color: var(--bg-button-color-2);
-  display: block;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-
-}
-
+/* ===================== FIM HOME ===================== */
 
 
 
