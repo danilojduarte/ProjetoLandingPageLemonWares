@@ -1,78 +1,84 @@
-window.addEventListener('scroll', onScroll)
-
-onScroll()
-function onScroll() {
-  showNavOnScroll()
-  showBackToTopButtonOnScroll()
-
-  activateMenuAtCurrentSection(home)
-  activateMenuAtCurrentSection(services)
-  activateMenuAtCurrentSection(about)
-  activateMenuAtCurrentSection(contact)
+function onScroll () {
+  
 }
 
-function activateMenuAtCurrentSection(section) {
-  const targetLine = scrollY + innerHeight / 2
 
-  // verificar se a seção passou da linha
-  // quais dados vou precisar?
-  const sectionTop = section.offsetTop
-  const sectionHeight = section.offsetHeight
-  const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
 
-  // verificar se a base está abaixo da linha alvo
+// window.addEventListener('scroll', onScroll)
 
-  const sectionEndsAt = sectionTop + sectionHeight
-  const sectionEndPassedTargetline = sectionEndsAt <= targetLine
+// onScroll()
+// function onScroll() {
+//   showNavOnScroll()
+//   showBackToTopButtonOnScroll()
 
-  // limites da seção
-  const sectionBoundaries =
-    sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline
+//   activateMenuAtCurrentSection(home)
+//   activateMenuAtCurrentSection(services)
+//   activateMenuAtCurrentSection(about)
+//   activateMenuAtCurrentSection(contact)
+// }
 
-  const sectionId = section.getAttribute('id')
-  const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
+// function activateMenuAtCurrentSection(section) {
+//   const targetLine = scrollY + innerHeight / 2
 
-  menuElement.classList.remove('active')
-  if (sectionBoundaries) {
-    menuElement.classList.add('active')
-  }
-}
+//   // verificar se a seção passou da linha
+//   // quais dados vou precisar?
+//   const sectionTop = section.offsetTop
+//   const sectionHeight = section.offsetHeight
+//   const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
 
-function showNavOnScroll() {
-  if (scrollY > 0) {
-    navegacao.classList.add('scroll')
-  } else {
-    navegacao.classList.remove('scroll')
-  }
-}
+//   // verificar se a base está abaixo da linha alvo
 
-function showBackToTopButtonOnScroll() {
-  if (scrollY > 550) {
-    backToTopButton.classList.add('show')
-  } else {
-    backToTopButton.classList.remove('show')
-  }
-}
+//   const sectionEndsAt = sectionTop + sectionHeight
+//   const sectionEndPassedTargetline = sectionEndsAt <= targetLine
 
-function openMenu() {
-  document.body.classList.add('menu-expanded')
-}
+//   // limites da seção
+//   const sectionBoundaries =
+//     sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline
 
-function closeMenu() {
-  document.body.classList.remove('menu-expanded')
-}
+//   const sectionId = section.getAttribute('id')
+//   const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
 
-ScrollReveal({
-  origin: 'top',
-  distance: '30px',
-  duration: 700
-}).reveal(`
-  #home, 
-  #home img, 
-  #home .stats, 
-  #services,
-  #services header,
-  #services .card
-  #about, 
-  #about header, 
-  #about .content`)
+//   menuElement.classList.remove('active')
+//   if (sectionBoundaries) {
+//     menuElement.classList.add('active')
+//   }
+// }
+
+// function showNavOnScroll() {
+//   if (scrollY > 0) {
+//     navegacao.classList.add('scroll')
+//   } else {
+//     navegacao.classList.remove('scroll')
+//   }
+// }
+
+// function showBackToTopButtonOnScroll() {
+//   if (scrollY > 550) {
+//     backToTopButton.classList.add('show')
+//   } else {
+//     backToTopButton.classList.remove('show')
+//   }
+// }
+
+// function openMenu() {
+//   document.body.classList.add('menu-expanded')
+// }
+
+// function closeMenu() {
+//   document.body.classList.remove('menu-expanded')
+// }
+
+// ScrollReveal({
+//   origin: 'top',
+//   distance: '30px',
+//   duration: 700
+// }).reveal(`
+//   #home, 
+//   #home img, 
+//   #home .stats, 
+//   #services,
+//   #services header,
+//   #services .card
+//   #about, 
+//   #about header, 
+//   #about .content`)
