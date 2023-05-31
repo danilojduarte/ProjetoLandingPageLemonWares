@@ -181,6 +181,7 @@ nav .wrapper {
   justify-content: space-between;
 }
 
+/* Função Scroll para barra de rolagem e apresentação do menu mobile */
 nav.scroll {
   background-color: var(--branco-color);
   width: 100vw;
@@ -188,4 +189,4 @@ nav.scroll {
 
 /* ===================== FIM NAV ===================== */
 
-/* Pausa na aula em {0-52-26} Alterando cor da logo */
+/* Pausa na aula em {01-17-57} Criando Menu List */
