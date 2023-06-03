@@ -214,6 +214,9 @@ body.menu-expanded .menu {
   top: 0;
   left: 0;
   background: var(--primary-color);
+
+  width: 100vw;
+  height: 100vh;
 }
 
 body.menu-expanded nav {
