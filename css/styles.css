@@ -196,6 +196,10 @@ nav.scroll {
 /* ===================== FIM NAV ===================== */
 
 /* ===================== MENU EXPANSIVO ===================== */
+body.menu-expanded {
+  overflow: hidden;
+}
+
 .menu,
 .close-menu,
 body.menu-expanded .open-menu{
@@ -221,6 +225,20 @@ body.menu-expanded .menu {
 
 body.menu-expanded nav {
   position: relative;
+}
+
+.menu button {
+  color: var(--branco-color);
+  background: transparent;
+  font-size: 4rem;
+}
+
+.social-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 3.2rem;  
 }
 
 
