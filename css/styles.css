@@ -221,13 +221,15 @@ body.menu-expanded .menu {
 
   width: 100vw;
   height: 100vh;
+
+  padding-top:var(--nav-height);
 }
 
 body.menu-expanded nav {
   position: relative;
 }
 
-.menu ul {
+.menu ul:nth-child(1) {
   display: flex;
   flex-direction: column;
   gap: 4.8rem;
@@ -243,11 +245,9 @@ body.menu-expanded nav {
 
 .menu .button {
   background:transparent;
-
-  font-size: 4rem;
   border: none;
-  display: inline-block;
 
+  display: inline-block;
   margin-top: 4.8rem;
   margin-bottom: 8rem;
   
@@ -265,4 +265,15 @@ body.menu-expanded nav {
   gap: 3.2rem;  
 }
 
+.social-links i {
+  font-size: 3.2rem;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded .close-menu {
+  position: relative;
+  z-index: 100;
+}
+
+/* Alterar a cor do logo dentro do menu expanded */
 
