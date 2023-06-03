@@ -240,17 +240,21 @@ body.menu-expanded nav {
   color: var(--branco-color);
   text-decoration: none;
 }
-.menu .button a svg {
-  background: var(--branco-color);
-  
+
+.menu .button {
+  background:transparent;
+
   font-size: 4rem;
   border: none;
   display: inline-block;
-  padding: 0;
 
   margin-top: 4.8rem;
   margin-bottom: 8rem;
   
+}
+
+.menu .button img {
+  width: 4rem;
 }
 
 .social-links{
